@@ -658,10 +658,20 @@ a:hover {
 
 .checkbox-container{
     margin-bottom: 24px;
+    display:flex;
+    align-items: center;
     }
 
+.checkbox-container input:checked ~ .form-checkmark {
+background-color: green;
+}
 
-.user-accept{
+.checkbox-container label{
+    margin-bottom: 0;
+}
+
+
+.user-accept-text{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -675,7 +685,7 @@ a:hover {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -686,6 +696,21 @@ a:hover {
 
     background-color: #404bbf;
 }
+
+.form-checkmark{
+    border-radius:2px ;
+    border: 1px solid var(--navy-blue-modal);
+    width:16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #404bbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+
+
 
 
 
