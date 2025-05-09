@@ -561,6 +561,7 @@ a:hover {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
 }
 
 .close-button:hover,
@@ -612,7 +613,7 @@ a:hover {
     border-color: #4D5AE5;
 }
 
-.icon-person{
+.form-icon{
     position: absolute;
     left: 16px;
     top: 50%;
@@ -621,7 +622,7 @@ a:hover {
 }
 
 
-.icon-person:focus {
+.form-icon:focus {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #4D5AE5;
 }
