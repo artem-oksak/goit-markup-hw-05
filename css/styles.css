@@ -659,7 +659,7 @@ a:hover {
 .checkbox-container{
     margin-bottom: 24px;
     }
-}
+
 
 .user-accept{
     font-size: 12px;
@@ -682,9 +682,10 @@ a:hover {
 
 }
 
+.checkbox-container input:checked~privacy-policy {
 
+    background-color: #404bbf;
 }
-
 
 
 
