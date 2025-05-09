@@ -662,9 +662,7 @@ a:hover {
     align-items: center;
     }
 
-.checkbox-container input:checked ~ .form-checkmark {
-background-color: green;
-}
+
 
 .checkbox-container label{
     margin-bottom: 0;
@@ -697,7 +695,7 @@ background-color: green;
     background-color: #404bbf;
 }
 
-.form-checkmark{
+.form-checkmark-icon{
  
     width:16px;
     height: 16px;
@@ -712,8 +710,13 @@ background-color: green;
 }
 
 
+:root {
+    --accent-color: #404bbf;
+}
 
-
+.checkbox:checked+label .form-checkmark-icon {
+    background-color: var(--accent-color);
+}
 
 
 
